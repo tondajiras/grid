@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "blue green red"
+    "yellow orange grey";
+  grid-template-rows: repeat(2, 300px);
+  gap: 10px;
+}
+.grid-container div {
+  border: 5px solid rgb(173, 163, 163);
+}
+
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.grey {
+  background-color: grey;
+}
