@@ -1,33 +1,22 @@
-body {
-  margin: 0;
-}
 .grid-container {
   display: grid;
-  grid-template-areas:
-    "blue green red"
-    "yellow orange grey";
-  grid-template-rows: repeat(2, 300px);
-  gap: 10px;
-}
-.grid-container div {
-  border: 5px solid rgb(173, 163, 163);
-}
 
-.blue {
-  background-color: blue;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 10px;
+  grid-template-areas:
+    "side other other"
+    "side other other"
+    "none last last";
 }
-.green {
-  background-color: green;
+.grid-container > div {
+  background-color: rgb(13, 153, 212);
+  padding: 30px;
+  color: white;
 }
-.red {
-  background-color: red;
+.grid-item-1 {
+  grid-area: side;
 }
-.yellow {
-  background-color: yellow;
-}
-.orange {
-  background-color: orange;
-}
-.grey {
-  background-color: grey;
+.grid-item-7 {
+  grid-area: last;
 }
